@@ -1,0 +1,49 @@
+<div class="content">
+    <mat-card-title>Alunos</mat-card-title>
+    <mat-card-subtitle><br>Editar Aluno</mat-card-subtitle>
+    <mat-divider></mat-divider>
+    <br>
+
+    <div class="input1">
+        <mat-form-field appearance="outline">
+            <mat-label>Id.</mat-label>
+            <input matInput id="idaluno" disabled [(ngModel)]="aluno.idaluno" name="idaluno">
+
+        </mat-form-field>
+    </div>
+
+    <div class="input2">
+        <mat-form-field appearance="outline">
+            <mat-label>Nome do Aluno</mat-label>
+            <input matInput id="nome" required [(ngModel)]="aluno.nomealuno" name="nome">
+
+        </mat-form-field>
+    </div>
+
+    <div class="input3">
+        <mat-form-field appearance="outline">
+            <mat-label>Sexo do Aluno</mat-label>
+            <input matInput id="sexo" required [(ngModel)]="aluno.sexoaluno"
+                name="sexo">
+
+        </mat-form-field>
+    </div>
+
+    <div class="input4"></div>
+    <mat-form-field appearance="outline">
+        <mat-label>Data Nasc. do Aluno</mat-label>
+        <input matInput id="data_nasc" required [(ngModel)]="aluno.data_nasc"
+            name="data_nasc">
+
+    </mat-form-field>
+
+    <div class="button">
+        <span class="bt" (click)="atualizar()">
+            <img class="img-btn" src="assets/img/check_box.png">Atualizar
+        </span>
+        <span class="bt" (click)="cancelar()">
+            <img class="img-btn" src="assets/img/cancel.png">Cancelar
+        </span>
+    </div>
+
+</div>
